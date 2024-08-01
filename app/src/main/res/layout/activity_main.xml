@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Preview View for CameraX -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Camera Preview"
+        android:layout_gravity="center" />
+
+    <!-- Overlay for QR Code Scanner with blur effect -->
+    <com.example.hwcamera.CustomOverlay
+        android:id="@+id/scannerOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <!-- Text View for instructions -->
+    <TextView
+        android:id="@+id/scanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR code"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp" />
+
+</FrameLayout>
